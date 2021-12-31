@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <select name="" id="kpop" onchange="berubah()">
+        <option value="">-- Hewan --</option>
+        <option value="harimau">Harimau</option>
+
+<option value="serigala">Serigala</option>
+    </select>
+    <br>
+
+    <div style="display: flex; justify-content: center; width: 100%;" id="tempat_gambar">
+        <!-- <img src="" alt=""> -->
+    </div>
+    <script>
+        let sm = document.getElementById("kpop")
+        let tempat_gambar = document.getElementById("tempat_gambar")
+
+        function berubah() {
+            switch (kpop.value) {
+                case "harimau": tempat_gambar.innerHTML = '<img src="harimau.png" alt="">'
+                    break;
+                case "serigala": tempat_gambar.innerHTML = '<img src="serigala.png" alt="">'
+                    break;
+                default:
+                    break;
+            }
+            // switch (hewan.value) {
+            //     case "bekantan": tempat_gambar.innerHTML = '<img src="nct.png" alt="">' break;
+            //     case "orang_utan": tempat_gambar.innerHTML = '<img src="aespa.png" alt="">' break;
+            //     default = break;
+            // }
+        }
+    </script>
+</body>
+
+</html>
